@@ -1,0 +1,50 @@
+/* Demo only */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #1a1d24;
+	/* Local font */
+	font-family: Clash Display Variable;
+	font-weight: 700;
+	color: #fff;
+	padding: 25px;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+.showcase {
+	width: 500px;
+	display: grid;
+	gap: 10px;
+}
+.showcase > * {
+	background-color: #2e3440;
+	padding: 10px;
+}
+/* End demo only */
+@media screen and (min-width: 64em) {
+	.showcase {
+		grid-template-columns: 150px 1fr;
+		grid-template-rows: 50px repeat(2, 1fr) 50px;
+		grid-template-areas:
+			'header header'
+			'sidebar main'
+			'sidebar main'
+			'sidebar footer';
+	}
+	.header {
+		grid-area: header;
+	}
+	.sidebar {
+		grid-area: sidebar;
+	}
+	.main {
+		grid-area: main;
+	}
+	.footer {
+		grid-area: footer;
+	}
+}
