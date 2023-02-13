@@ -1,0 +1,91 @@
+/* General styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1a1d24;
+  color: #fff;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+a {
+  color: inherit;
+}
+/* General styles end*/
+.nav {
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.nav:hover {
+  pointer-events: auto;
+}
+.sm-header {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.line {
+  width: 15rem;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 2rem;
+  margin-right: auto;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.nav:hover .line {
+  transform: scaleX(1);
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  margin-inline: 2.5rem;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.nav-item:nth-child(odd) {
+  transform: translateY(5rem);
+}
+.nav-item:nth-child(even) {
+  transform: translateY(-5rem);
+}
+.nav:hover .nav-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-link {
+  font-size: 3.6rem;
+}
+.nav-link i {
+  transition: color 0.5s;
+}
+.nav-link:hover i.fa-facebook-f {
+  color: #3b5998;
+}
+.nav-link:hover i.fa-twitter {
+  color: #1da1f2;
+}
+.nav-link:hover i.fa-google-plus-g {
+  color: #dd4b39;
+}
+.nav-link:hover i.fa-dribbble {
+  color: #ea4c89;
+}
+.nav-link:hover i.fa-linkedin-in {
+  color: #0077b5;
+}
