@@ -1,0 +1,62 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #1A1D24;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+/* General styles end */
+.card{
+    width: 150px;
+    height: 200px;
+    position: relative;
+}
+.card-inner{
+    width: inherit;
+    height: inherit;
+    background-color: 
+    rgba(255, 255, 255, .05);
+    box-shadow: 0 0 5px 
+    rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background: 
+    radial-gradient(#0561EE,
+    #18E0B5);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up 2s ease-in 
+    infinite alternate-reverse;
+}
+.circle:nth-child(1){
+    top: -25px;
+    left: -25px;
+}
+.circle:nth-child(2){
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down;
+}
+
+@keyframes move-up{
+    to{
+        transform: translateY(-10px);
+    }
+}
+@keyframes move-down{
+    to{
+        transform: translateY(10px);
+    }
+}
