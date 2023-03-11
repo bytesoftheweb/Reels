@@ -1,0 +1,75 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	display: grid;
+	place-content: center;
+}
+/* ======================== */
+.card {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	place-content: center;
+	width: 250px;
+	height: 250px;
+	color: #a18a96;
+	text-align: center;
+	background: url('./bg.jpg') center no-repeat;
+	background-size: cover;
+	padding: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card::before,
+.card::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: calc(60% + 35px);
+	background-color: #fff;
+	transition: transform 0.5s 0.25s;
+}
+.card::before {
+	top: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+	transform: translateY(-100%);
+}
+.card::after {
+	bottom: 0;
+	clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+	transform: translateY(100%);
+}
+.card__body {
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.card__title {
+	color: #6a515e;
+	margin-bottom: 15px;
+}
+.card:hover::before,
+.card:hover::after {
+	transform: translateY(0);
+}
+.card:hover .card__body {
+	opacity: 1;
+	transition-delay: 0.75s;
+}
