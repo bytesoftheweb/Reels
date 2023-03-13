@@ -17,6 +17,7 @@ body {
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #1a1d24;
+	color: #fff;
 	display: grid;
 	place-content: center;
 }
@@ -26,61 +27,35 @@ body {
 	height: 250px;
 	perspective: 800px;
 }
-
-.card__title {
-	text-align: center;
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-	letter-spacing: 2px;
-}
-
 .card__inner {
 	position: relative;
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: transform 0.5s;
 }
-
 .card:hover .card__inner {
 	transform: rotateY(180deg);
 }
-
 .card__body {
 	position: absolute;
 	inset: 0;
-	color: #fff;
 	display: grid;
 	place-items: center;
 	backface-visibility: hidden;
 	border-radius: 8px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-	isolation: isolate;
+	box-shadow: 0 5px 10px 
+		rgba(0, 0, 0, 0.15);
 }
-
 .card__body--front {
 	background-image: radial-gradient(
 		circle 248px at center,
-		#16d9e3 0%,
-		#30c7ec 47%,
+		#16d9e3 0%,#30c7ec 47%,
 		#46aef7 100%
 	);
 }
-
 .card__body--back {
-	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+	background-image: linear-gradient(
+		-20deg, #fc6076 0%,
+		 #ff9a44 100%);
 	transform: rotateY(180deg);
-}
-
-
-.card__body::after{
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
-	width: 75px;
-	height: 75px;
-	z-index: -1;
-	border-radius: 50%;
 }
