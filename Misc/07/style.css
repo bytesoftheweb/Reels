@@ -24,8 +24,7 @@ body {
 	height: 150px;
 	border-radius: 50%;
 	color: #fff;
-	outline: 2px solid #7effb2;
-	outline-offset: -1px;
+	box-shadow: 0 0 0 2px #7effb2;
 }
 .progress-bar::after,
 .number {
@@ -39,7 +38,7 @@ body {
 	width: 110px;
 	height: 110px;
 	border-radius: inherit;
-	outline: inherit;
+	box-shadow: inherit;
 }
 .number {
 	font-size: 21px;
