@@ -1,0 +1,54 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+/* ======================== */
+.card {
+	width: 250px;
+	height: 150px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+}
+.card__skeleton {
+	background-image: linear-gradient(
+		90deg,
+		#ccc 0px,
+		rgb(229 229 229 / 90%) 40px,
+		#ccc 80px
+	);
+	background-size: 300%;
+	background-position: 100% 0;
+	border-radius: inherit;
+	animation: shimmer 1.5s infinite;
+}
+.card__title {
+	height: 15px;
+	margin-bottom: 15px;
+}
+.card__description {
+	height: 100px;
+}
+@keyframes shimmer {
+	to {
+		background-position: -100% 0;
+	}
+}
