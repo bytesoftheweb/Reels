@@ -1,0 +1,1 @@
+![Project thumbnail](./thumbnail.png)

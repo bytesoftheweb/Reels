@@ -1,0 +1,59 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.link {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+.link::before,
+.link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #0561EE;
+	transform: scaleX(0);
+	transition: transform 0.25s;
+}
+.link::before {
+	top: -3px;
+	transform-origin: left;
+}
+.link::after {
+	bottom: -3px;
+	transform-origin: right;
+}
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+	transform: scaleX(1);
+}
