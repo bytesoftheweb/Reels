@@ -1,0 +1,40 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.button{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0561EE;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	outline: 2px solid #0561EE;
+	cursor: pointer;
+	transition: outline-offset .25s;
+}
+.button:hover,
+.button:focus{
+	outline-offset: 3px;
+}
+.button:is(:hover, :focus){
+	outline-offset: 3px;
+}
