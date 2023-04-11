@@ -1,0 +1,37 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.parent{
+	width: 400px;
+	height: 240px;
+	border: 3px solid #0561EE;
+	border-radius: 10px;
+	padding: 20px;
+	display: grid;
+	place-items: center;
+}
+.child{
+	width: 100px;
+	height: 60px;
+	border: inherit;
+	border-radius: inherit;
+}
