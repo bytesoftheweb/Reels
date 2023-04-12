@@ -1,0 +1,56 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+/* ======================== */
+.title {
+	position: relative;
+}
+.title__alternate {
+	display: inline;
+	margin-left: 10px;
+}
+.title__alternate span {
+	position: absolute;
+	width: max-content;
+	background-color: #0561ee;
+	padding-inline: 10px;
+	opacity: 0;
+	transform-origin: 10% 75%;
+	animation: rotateWords 9s var(--d) linear infinite;
+}
+@keyframes rotateWords {
+	5% {
+		opacity: 1;
+	}
+	10%,
+	20% {
+		opacity: 1;
+		transform: rotate(3deg);
+	}
+	15% {
+		transform: rotate(-1deg);
+	}
+	25% {
+		opacity: 0;
+		transform: translateY(90px) rotate(10deg);
+	}
+}

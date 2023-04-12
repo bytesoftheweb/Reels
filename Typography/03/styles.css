@@ -1,0 +1,36 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.paragraph span {
+	display: block;
+	opacity: 0;
+	animation: reveal 0.5s forwards var(--d);
+}
+@keyframes reveal {
+	from {
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
