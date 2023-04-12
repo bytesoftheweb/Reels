@@ -1,0 +1,62 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.input-group {
+	position: relative;
+}
+.input-group input {
+	display: block;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	font: inherit;
+}
+.input-group input::placeholder {
+	transition: opacity 0.25s;
+}
+.input-group input:focus::placeholder {
+	opacity: 0;
+}
+.input-group label {
+	position: absolute;
+	top: -30px;
+	left: -26px;
+	line-height: 16px;
+	color: #fff;
+	display: inline-flex;
+	column-gap: 10px;
+	transition: transform 0.25s, opacity 0.25s;
+}
+.input-group label::before {
+	content: url('./mail-line.svg');
+	opacity: 0;
+}
+.input-group:focus-within label,
+.input-group input:valid ~ label {
+	transform: translateX(26px);
+}
+.input-group:focus-within label::before,
+.input-group input:valid ~ label::before {
+	opacity: 1;
+	transition-delay: 0.1s;
+}
