@@ -1,0 +1,75 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #000;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+/* ======================== */
+.card {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	background-color: #000;
+	border-radius: 8px;
+	border: 2px solid 
+		rgba(255, 255, 255,.1);
+	overflow: hidden;
+	transition: transform .5s;
+}
+.card:hover{
+	transform: translateY(-5px);
+}
+.card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	transform: scaleY(0.75);
+	transform-origin: bottom;
+	background: linear-gradient(
+		transparent, 
+		rgba(0, 0, 0, 0.4), #000);
+	transition: transform 0.25s;
+}
+.card:hover::before {
+	transform: scaleY(1);
+}
+.card__image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.card__body {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+}
+.card__title {
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+.card__subtitle {
+	font-size: 10px;
+	opacity: .75;
+}
