@@ -1,0 +1,31 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background: url('./background.jpg') center no-repeat;
+	background-size: cover;
+}
+/* ======================== */
+.cursor-tracker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 50px;
+	height: 50px;
+  opacity: 0;
+	pointer-events: none;
+  transition: opacity .25s;
+}
