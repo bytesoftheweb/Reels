@@ -1,0 +1,58 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #000;
+	line-height: 1.5;
+	display: grid;
+	place-items: center;
+	padding-top: 24px;
+}
+/* ======================== */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 16px;
+}
+.card {
+	position: relative;
+	flex: 0 0 250px;
+	height: 250px;
+	border: 2px solid rgb(255 255 255 / 10%);
+}
+.card__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card__body {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: linear-gradient(to top, #060508 50%, transparent);
+	padding: 32px 32px 16px;
+}
+.card__title {
+	font-size: 18px;
+	color: #e3e3e3;
+}
