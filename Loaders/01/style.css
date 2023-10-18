@@ -1,0 +1,31 @@
+.card-wrapper {
+  width: 200px;
+  background-color: #d7ec51;
+  border-radius: 0.25rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0.625rem;
+  animation: shimmer 1s 
+    infinite alternate;
+}
+.card > div {
+  background-color: #06031c;
+}
+.card-image {
+  height: 5rem;
+}
+.card-line {
+  width: var(--w);
+  height: 0.625rem;
+}
+@keyframes shimmer {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
