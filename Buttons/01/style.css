@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #120817;
+  background-color: #612a79;
+  border-radius: 0.25rem;
+}
+.button:hover span {
+  background-color: #c9a3d9;
+}
+.button:active span {
+  translate: none;
+}
+.button span {
+  display: inherit;
+  border-radius: inherit;
+  background-color: #d6b4e4;
+  padding: 1rem 2rem;
+  translate: 0.25rem -0.25rem;
+  border: 2px solid #612a79;
+  transition: translate 100ms 
+    cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+    background-color 250ms;
+}
