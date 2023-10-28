@@ -1,16 +1,22 @@
-## Instructions
+# Instructions
 
-It is very important that you read the post's caption on the respective platform. The caption provides information that will help you navigate the repo to help you find the snippet that you are looking for.
+Please ensure you read the post's caption on the respective platform before diving into the repository. The captions contain essential navigational cues to lead you right to the code snippets you're interested in.
 
-The general caption format is as follows
->✨ CSS buttons 01
->
->The completed code can be found on GitHub within the 'Reels/Buttons/01' repo.
->
->If you found this content useful, please tap the ♥️ icon and give me a follow. I would greatly appreciate it. Also, if you have any feedback, questions or concerns, let me know in the comments section 💬. Thanks ☺️
+Here's what a standard caption looks like:
 
-In the given caption example, the path specified means navigate to the `Reels` repo, then the `Buttons` folder, and finally the `01` folder. This is where the code for that particular reel will be. In order to avoid further confusion, the `numbered` folder will include a thumbnail of the project as well.
+> ✨ CSS Buttons 01  
+>  
+> Access the full code on GitHub, housed in the 'Reels/Buttons/01' directory.  
+>  
+> Found this helpful? Your ♥️ and follows are much appreciated! Any feedback or questions? Drop them in the comments 💬. Thanks, and happy coding! ☺️
 
-## License
+From this example, here’s how you navigate:
+1. Go to the `Reels` directory.
+2. Open the `Buttons` sub-directory.
+3. Inside, find folder `01`.
 
-I'm too lazy to include one of those fancy licenses; just know that you can use these code snippets as you see fit.
+Within this `numbered` folder, you'll also find a project thumbnail for quick reference.
+
+# License
+
+No formalities here! Feel free to use these code snippets however you wish. No need to worry about strict licensing - consider it open for your creative application and learning. Enjoy!
