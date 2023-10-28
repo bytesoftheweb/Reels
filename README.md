@@ -9,7 +9,7 @@ Here's what a standard caption looks like:
 > Access the full code on GitHub!
 > 
 > Username: bytesoftheweb
-> 
+
 > Repository: Reels
 > 
 > Sub-directories: Buttons/01
