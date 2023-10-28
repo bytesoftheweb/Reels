@@ -7,8 +7,11 @@ Here's what a standard caption looks like:
 > ✨ CSS Buttons 01  
 >  
 > Access the full code on GitHub!
+> 
 > Username: bytesoftheweb
+> 
 > Repository: Reels
+> 
 > Sub-directories: Buttons/01
 >  
 > Found this helpful? Your ♥️ and follows are much appreciated! Any feedback or questions? Drop them in the comments 💬. Thanks, and happy coding! ☺️
