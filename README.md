@@ -21,6 +21,20 @@ From this example, here’s how you navigate:
 2. Open the `Buttons` sub-directory.
 3. Inside, find folder `01`.
 
+- 📁 **ProjectName**
+  - 📁 **src**
+    - 📄 index.js
+    - 📄 App.js
+  - 📁 **components**
+    - 📄 Header.js
+    - 📄 Footer.js
+  - 📁 **assets**
+    - 📁 **images**
+      - 🖼️ logo.png
+      - 🖼️ banner.png
+  - 📄 README.md
+
+
 Within this `numbered` folder, you'll also find a project thumbnail for quick reference.
 
 # License
